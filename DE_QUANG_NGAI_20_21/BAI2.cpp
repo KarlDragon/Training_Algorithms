@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    ifstream INP_file("BAI2.INP.txt");
+    ifstream INP_file("BAI2.INP");
 	ofstream OUT_file("BAI2.OUT");
 	
 	ios_base::sync_with_stdio(false);
@@ -14,12 +14,12 @@ int main() {
     long n,k;
     long count;
     long max_count=0;
-	vector <long> arr(n);
+	vector <int> arr(n);
+	
     INP_file >> n >> k;
+    
     for ( int i = 0 ; i < n ; i++){
-    	long item;
-    	INP_file >> item ;
-    	arr.push_back(item);
+    	INP_file >> arr[i] ;
 	}
 	
 	for ( int i = 0 ; i < n ; i++){
@@ -36,8 +36,7 @@ int main() {
 			}
 		}
 	}
-	
-	
+		
 	OUT_file<<max_count;
 	
 	INP_file.close();

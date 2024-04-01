@@ -30,7 +30,7 @@ int main(){
     cin.tie(0);
     cout.tie(0);
     
-	ifstream inp_file("BAI3.txt");
+	ifstream inp_file("BAI3.INP");
 	ofstream out_file("BAI3.OUT");
 	
 	int housesAmount, avarageHousesHeight;

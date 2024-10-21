@@ -1,5 +1,4 @@
 *.exe
 *.txt
 *.OUT
-
- Training_Algorithms/.vs
+*.INP

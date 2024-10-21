@@ -3,6 +3,9 @@ using namespace std;
 void IO(){
 	freopen("BIEUTHUCNT.INP","r",stdin);
     freopen("BIEUTHUCNT.OUT","w",stdout);
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
 }
 vector<bool> is_prime(int n) {
     vector<bool> prime(n + 1, true);
@@ -63,13 +66,11 @@ int sol_3(int n, vector<bool> prime_arr){
             }
         }
     }
+    cout<<count;
 }
 
 int main() {
 	IO();
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
 	
     int n;
     vector<bool> prime_arr;
